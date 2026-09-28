@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/loading.json"; // Rename to your fi
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000 // Set animation duragit ion as per your animation
 };
 
 // Summary And Greeting Section
@@ -50,7 +50,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I Do",
   subTitle:
-    "Developer focused on building useful, people-first web applications. My background in technical support shapes how I build: clear interfaces, reliable systems, and practical solutions.",
+    "Technical skills build software. Curiosity and empathy make it good. I'm a developer who cares about the people using what I build. I ask a lot of questions, listen closely, and I'm always open to learning something new.",
   skills: [
     {
       title: "FRONTEND",
