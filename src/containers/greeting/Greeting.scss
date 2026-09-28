@@ -58,6 +58,40 @@
   height: auto;
 }
 
+.greeting-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-pic-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: #e8d5f5;
+  z-index: 0;
+}
+
+.profile-pic {
+  position: relative;
+  z-index: 1;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;

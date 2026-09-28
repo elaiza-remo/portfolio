@@ -1,5 +1,6 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
+import emoji from "react-easy-emoji";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -44,8 +45,33 @@ export default function Skills() {
               {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
-            <div>
-              {skillsSection.skills.map((skills, i) => {
+            <div className="skills-text-container">
+              {skillsSection.skills.map((skill, i) => {
+                if (typeof skill === "object" && skill.title) {
+                  return (
+                    <div key={i} className="skill-item">
+                      <h3
+                        className={
+                          isDark
+                            ? "dark-mode skill-subheader"
+                            : "skill-subheader"
+                        }
+                      >
+                        {skill.title}
+                      </h3>
+                      <p
+                        className={
+                          isDark
+                            ? "dark-mode subTitle skill-detail"
+                            : "subTitle skill-detail"
+                        }
+                      >
+                        {emoji("⚡ ")}
+                        {skill.text}
+                      </p>
+                    </div>
+                  );
+                }
                 return (
                   <p
                     key={i}
@@ -55,7 +81,7 @@ export default function Skills() {
                         : "subTitle skills-text"
                     }
                   >
-                    {skills}
+                    {skill}
                   </p>
                 );
               })}
