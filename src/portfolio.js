@@ -207,7 +207,7 @@ const bigProjects = {
       image: require("./assets/images/shelficon.jpeg"),
       projectName: "Shelf: A Personal Reading Library",
       projectDesc: "Track everything you read — books, articles, psychology papers — take notes, save quotes, link sources together, generate citations, and share your shelf publicly, with friends, or keep it private.",
-      techTags: ["Next.js 15 (App Router)", "React 19", "TypeScript", "Tailwind CSS v4", "Supabase (Postgres, Auth, RLS)", "Vercel"],
+      techTags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Vercel"],
       footerLink: [
         {
           name: "Visit Shelf",
