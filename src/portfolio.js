@@ -201,7 +201,12 @@ const bigProjects = {
       projectName: "eFit: Fitness Analytics Platform",
       projectDesc: "Next.js/React dashboard that pulls biometric data from Apple HealthKit and Strava to visualize training loads and generate AI-powered coaching recommendations.",
       techTags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "REST APIs"],
-      footerLink: []
+      footerLink: [
+        {
+          name: "Visit eFit",
+          url: "" // TODO: add eFit URL once deployed
+        }
+      ]
     },
     {
       image: require("./assets/images/shelficon.jpeg"),
