@@ -211,7 +211,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Shelf",
-          url: "https://shelf-4v9m92bif-elaiza.vercel.app/"
+          url: "https://shelf-ashy-six.vercel.app/"
         }
       ]
     }
