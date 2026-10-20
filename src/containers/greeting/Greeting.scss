@@ -135,22 +135,55 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: 34px;
     text-align: center;
   }
   .greeting-text-p {
     font-size: 16px;
-    line-height: normal;
+    line-height: 1.5;
     text-align: center;
   }
   .greeting-main {
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .profile-pic-wrapper::before {
+    width: 280px;
+    height: 280px;
+  }
+  .profile-pic {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main, .greet-main {
+    width: 95%;
+    padding: 10px 5px;
+  }
+  .greeting-text {
+    font-size: 28px;
+  }
+  .greeting-text-p {
+    font-size: 15px;
+  }
+  .profile-pic-wrapper::before {
+    width: 220px;
+    height: 220px;
+  }
+  .profile-pic {
+    width: 200px;
+    height: 200px;
   }
 }
 

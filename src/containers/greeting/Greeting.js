@@ -4,7 +4,7 @@ import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import { greeting } from "../../portfolio";
+import {greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {

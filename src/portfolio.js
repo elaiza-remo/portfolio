@@ -202,6 +202,13 @@ const bigProjects = {
       projectDesc: "Next.js/React dashboard that pulls biometric data from Apple HealthKit and Strava to visualize training loads and generate AI-powered coaching recommendations.",
       techTags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "REST APIs"],
       footerLink: []
+    },
+    {
+      image: require("./assets/images/shelfIcon.svg"),
+      projectName: "Shelf: A Personal Reading Library",
+      projectDesc: "Track everything you read — books, articles, psychology papers — take notes, save quotes, link sources together, generate citations, and share your shelf publicly, with friends, or keep it private.",
+      techTags: [],
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true

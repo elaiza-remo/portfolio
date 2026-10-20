@@ -28,6 +28,11 @@ function Header() {
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
 
+  const closeMenu = () => {
+    const btn = document.getElementById("menu-btn");
+    if (btn) btn.checked = false;
+  };
+
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
@@ -47,51 +52,51 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={closeMenu}>Skills</a>
             </li>
           )}
           {viewEducation && (
             <li>
-              <a href="#education">Education</a>
+              <a href="#education" onClick={closeMenu}>Education</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience" onClick={closeMenu}>Work Experiences</a>
             </li>
           )}
           {viewProjects && (
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={closeMenu}>Projects</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource" onClick={closeMenu}>Open Source</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements" onClick={closeMenu}>Achievements</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs" onClick={closeMenu}>Blogs</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks" onClick={closeMenu}>Talks</a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#resume" onClick={closeMenu}>Resume</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact" onClick={closeMenu}>Contact Me</a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
