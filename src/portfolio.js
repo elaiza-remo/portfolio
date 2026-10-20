@@ -26,7 +26,8 @@ const greeting = {
     "Recent CS graduate 🦾🚀  Full-stack developer focused on practical, human-centred applications. Turning everyday problems into intuitive tools."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1GwIdqZgOB_0ueFm1Q_LNsHujJmTvPcnE/view?usp=sharing"  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1GwIdqZgOB_0ueFm1Q_LNsHujJmTvPcnE/view?usp=sharing",
+  displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
