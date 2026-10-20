@@ -207,8 +207,13 @@ const bigProjects = {
       image: require("./assets/images/shelfIcon.svg"),
       projectName: "Shelf: A Personal Reading Library",
       projectDesc: "Track everything you read — books, articles, psychology papers — take notes, save quotes, link sources together, generate citations, and share your shelf publicly, with friends, or keep it private.",
-      techTags: [],
-      footerLink: []
+      techTags: ["Next.js 15 (App Router)", "React 19", "TypeScript", "Tailwind CSS v4", "Supabase (Postgres, Auth, RLS)", "Vercel"],
+      footerLink: [
+        {
+          name: "Visit Shelf",
+          url: "https://shelf-4v9m92bif-elaiza.vercel.app/"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
