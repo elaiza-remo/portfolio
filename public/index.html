@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-sky="day">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Elaiza Remo | Full-Stack Developer</title>
+    <meta name="title" content="Elaiza Remo | Full-Stack Developer">
+    <meta name="description" content="Portfolio of Elaiza Remo, a full-stack developer in Edmonton building useful, people-first web applications.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.elaizaremo.com/">
+    <meta property="og:title" content="Elaiza Remo | Full-Stack Developer">
+    <meta property="og:description" content="Turning everyday problems into intuitive tools.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Elaiza Remo | Full-Stack Developer">
+    <meta property="twitter:description" content="Turning everyday problems into intuitive tools.">
+
+    <meta name="msapplication-TileColor" content="#4B44C8">
+    <meta name="theme-color" content="#4B44C8" />
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg">
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+    <link rel="canonical" href="https://www.elaizaremo.com/">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Pick the sky from the visitor's local time before the page paints (preview with ?sky=night etc.) -->
+    <script>
+      (function () {
+        var q = new URLSearchParams(location.search).get('sky');
+        var h = new Date().getHours();
+        var sky = h >= 5 && h < 11 ? 'morning' : h >= 11 && h < 17 ? 'day' : h >= 17 && h < 21 ? 'dusk' : 'night';
+        if (['morning', 'day', 'dusk', 'night'].indexOf(q) > -1) sky = q;
+        document.documentElement.setAttribute('data-sky', sky);
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to see Elaiza Remo's portfolio.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
